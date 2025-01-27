@@ -1,0 +1,13 @@
+.gc-divider {
+    background-color: var(--ds-color-white-20);
+}
+
+.gc-divider--vertical {
+    width: .125rem;
+    /* height get set in the component */
+}
+
+.gc-divider--horizontal {
+    height: .125rem;
+    /* width get set in the component */
+}
