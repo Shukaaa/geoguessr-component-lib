@@ -1,0 +1,46 @@
+.slider {
+    --cross-axis-length: 0.5rem;
+    --background: var(--ds-color-purple-100);
+    --background-shadow: var(--ds-color-white-10);
+    --fill: var(--ds-color-purple-20);
+    --handle-size: 1.5rem;
+    --handle-color: var(--ds-color-purple-50);
+    --handle-box-shadow: inset 0 0.0625rem 0 0 var(--ds-color-purple-20);
+    --slider-margin: 1.25rem 0;
+
+    display: block;
+    background: var(--background);
+    border-radius: .625rem;
+    box-shadow: inset 0 .125rem .0625rem 0 var(--background-shadow);
+    cursor: pointer;
+    height: var(--cross-axis-length);
+    margin: var(--slider-margin);
+    position: relative;
+    user-select: none;
+    width: 100%;
+}
+
+.slider__track {
+    display: block;
+    background: var(--fill);
+    border-bottom-left-radius: .75rem;
+    border-top-left-radius: .75rem;
+    height: 100%;
+}
+
+.slider__thumb {
+    background-color: var(--handle-color);
+    border-radius: 1.875rem;
+    box-shadow: var(--handle-box-shadow);
+    cursor: pointer;
+    display: inline-block;
+    font-size: .9em;
+    height: var(--handle-size);
+    outline: none;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: var(--handle-size);
+    z-index: 1;
+}

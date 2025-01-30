@@ -2,6 +2,7 @@ import {Button} from "./components/button/button";
 import {Switch} from "./components/switch/switch";
 import {TextInput} from "./components/text-input/text-input";
 import {Divider} from "./components/divider/divider";
+import {Slider} from "./components/slider/slider";
 
 // @ts-ignore
 window.GC = {
@@ -10,5 +11,6 @@ window.GC = {
 	Button,
 	Switch,
 	TextInput,
-	Divider
+	Divider,
+	Slider
 }
